@@ -1,8 +1,8 @@
 # Image-Retrieval
 
-### Hi guys! 
+### Hi guys! Please, take a look. 
 
-# This project:
+### This project:
 1. Uses Unsplash.com to retrieve images from API.
 2. Has a basic image search functionality. 
 3. Display results in GRID layout. 
