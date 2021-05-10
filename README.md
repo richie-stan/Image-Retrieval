@@ -16,14 +16,14 @@ I have also tried to implement this project by using query list instead of local
 
 I can do an Authentification by using Auth0, but with Unsplash Authentification I encountered a problem: 
 
-When I get an authentification code it should redirect me to the page, where then I could do various tasks ( liking and disliking ), that need a private access, unfortunately I got stuck here: \
+When I get an authentification code it should redirect me to the page, where then I could do various tasks ( liking and disliking ), that need a private access, unfortunately I got stuck here: 
 
   unsplash.authconst\
     .userAuthentication() ---> need to figure out how to take an authentification code from URL here. \
     .then(toJson)\
     .then((json) => {\
       unsplash.auth.setBearerToken(json.access_token);\
-    });\
+    });
    
 
 
