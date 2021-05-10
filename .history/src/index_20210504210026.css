@@ -1,0 +1,205 @@
+html {
+  font-size: 28px;
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 24px;
+  }
+}
+body {
+  margin: 0;
+  height: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
+  color: White;
+}
+p {
+  text-shadow: 1px 1px 1px #000;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+/* React color */
+.react-color {
+  color: #61dafb;
+}
+/* Images animation */
+.opacity-animation {
+  animation-name: opacity-animation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  position: relative;
+  top: 0px;
+}
+#search-image {
+  animation-name: search-image;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  position: relative;
+  top: 0px;
+}
+.top-image1 {
+  animation-name: img-ani1;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  position: relative;
+  top: 0px;
+}
+.top-image2 {
+  animation-name: img-ani2;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  position: relative;
+  top: 0px;
+}
+.top-image3 {
+  animation-name: img-ani3;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  position: relative;
+  top: 0px;
+}
+.heading {
+  animation-name: heading;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  position: relative;
+  top: 0px;
+}
+@keyframes img-ani1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes img-ani2 {
+  from {
+    opacity: 0;
+    top: 20px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+@keyframes img-ani3 {
+  from {
+    opacity: 0;
+    top: 30px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+@keyframes heading {
+  from {
+    opacity: 0;
+    top: 20px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+@keyframes search-image {
+  from {
+    opacity: 0;
+    top: 5px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+@keyframes opacity-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* dropdown */
+
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.auto-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+
+/* input {
+  padding: 10px;
+  height: 20px;
+  width: 500px;
+  border: 1px solid purple;
+  margin: 10px;
+  font-size: 18px;
+  text-transform: capitalize;
+} */
+
+.pos-rel {
+  position: relative;
+}
+
+.autoContainer {
+  position: absolute;
+  border: none;
+  right: 10px;
+  top: 30px;
+  width: 212px;
+  background: #61dafb;
+  color: #000;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  padding-left: 5px;
+  /* padding: 5px; */
+}
+@media screen and (max-width: 416px) {
+  .autoContainer {
+    right: 0px;
+    margin-bottom: 20px;
+    font-size: 10px;
+    margin-bottom: 1em;
+  }
+  .autoContainer span {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+}
+.option,
+span {
+  font-size: 28px;
+  text-transform: capitalize;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
